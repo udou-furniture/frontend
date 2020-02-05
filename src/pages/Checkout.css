@@ -1,0 +1,135 @@
+#checkout-page {
+	background-color: #edf2f7;
+	/* background: var(--stripe-linear-gradient); */
+}
+
+#checkout-page h4 {
+	margin-top: 100px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+
+
+/* shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2 */
+
+.customer-details-form {
+	grid-column: 1/6;
+	font-family: var(--bodytext-font);
+	border-radius: 4px;
+	padding-top: 24px;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-bottom: 32px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	background-color: #fff;
+	box-shadow: var(--alt-shadow-med);
+	/* height: 500px; */
+}
+
+.fields {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 16px;
+	box-sizing: border-box;
+}
+
+.first-name {
+	margin-bottom: 24px;
+	grid-column: 1/4;
+
+}
+
+.last-name {
+	grid-column: 4/7;
+}
+
+.address {
+	grid-column: span 3;
+	width: 100%;
+	margin-bottom: 24px;
+}
+
+.phone-number {
+	grid-column: span 3;
+}
+
+.address input {
+	width: 100%;
+}
+
+.city {
+	margin-bottom: 24px;
+	grid-column: span 2;
+}
+
+.state {
+	grid-column: span 2;
+}
+
+.postcode {
+	grid-column: span 2;
+}
+
+
+.customer-details-form label {
+	display: block;
+	font-size: 12px;
+	margin-bottom: 8px;
+	color: var(--text-grey-darker);
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.025em;
+}
+
+.customer-details-form input {
+	font-size: 16px;
+	margin-bottom: 12px;
+	padding: 12px 16px;
+	border: solid 1px var(--bg-grey-lighter);
+	border-radius: 4px;
+
+	box-sizing: border-box;
+	width: 100%;
+	background: var(--bg-grey-lighter);
+	color: var(--text-grey-darker);
+}
+
+.customer-details-form select {
+	font-size: 16px;
+	margin-bottom: 12px;
+	padding: 12px 16px;
+	border: solid 1px var(--bg-grey-lighter);
+	border-radius: 4px;
+
+	box-sizing: border-box;
+	width: 100%;
+	background: var(--bg-grey-lighter);
+	color: var(--text-grey-darker);
+}
+
+.checkout-button {
+	font-size: 16px;
+	margin-bottom: 12px;
+	padding: 12px 16px;
+	border: solid 1px var(--bg-grey-lighter);
+	border-radius: 4px;
+	box-sizing: border-box;
+	background: var(--wireframe-purple);
+	color: var(--bg-grey-lighter);
+	width: 100%;
+}
+
+.order-summary {
+	grid-column: 6/9;
+	font-family: var(--bodytext-font);
+	border-radius: 4px;
+	padding-top: 24px;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-bottom: 32px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	background-color: #fff;
+	box-shadow: var(--alt-shadow-med);
+}

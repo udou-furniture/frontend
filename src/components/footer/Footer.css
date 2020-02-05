@@ -1,0 +1,32 @@
+/* MOBILE STYLES */
+footer {
+	padding: 30px 20px;
+	background-color: #fff;
+	background-size: 40%;
+}
+
+footer .copyright {
+	grid-column: 1/3;
+	font-size: 0.8em;
+}
+
+footer .social {
+	grid-column: 7/9;
+	display: flex;
+	justify-content: flex-end;
+}
+
+footer li {
+	margin: 0 6px;
+}
+
+footer img {
+	width: 20px;
+}
+
+/* LARGE TABLET AND LAPTOP STYLES */
+@media screen and (min-width: 960px) {
+	footer{
+    padding: 40px 20px;
+	}
+}

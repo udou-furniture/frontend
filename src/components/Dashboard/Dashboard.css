@@ -1,0 +1,38 @@
+.account-dashboard h1 {
+	grid-column: 1/9;
+	background: lightcyan;
+}
+
+.saved-designs {
+	background: lightskyblue;
+}
+
+.saved-designs h1 {
+	max-width: 1060px;
+	margin: 0 auto;
+	width: 100%;
+	background: lightgreen;
+}
+
+.saved-designs table {
+	grid-row: 2;
+	background: yellow;
+}
+
+
+.previously-purchased {
+	background: lightskyblue;
+}
+
+.previously-purchased h1 {
+	background: lightgreen;
+}
+
+.previously-purchased table {
+	grid-row: 2;
+	background: yellow;
+}
+
+tr {
+	grid-column: 2/9;
+}

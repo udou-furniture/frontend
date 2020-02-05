@@ -1,0 +1,30 @@
+#payment-complete-page {
+  background-color: #edf2f7;
+  height: 100vh;
+}
+
+.complete-content {
+  grid-column: 1/8;
+	/* font-family: var(--bodytext-font); */
+	border-radius: 4px;
+	padding-top: 24px;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-bottom: 32px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	background-color: #fff;
+  box-shadow: var(--alt-shadow-med);
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#sideboard-image {
+  width: 400px;
+}

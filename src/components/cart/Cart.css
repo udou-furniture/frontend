@@ -1,0 +1,23 @@
+.sliding-pane {
+	z-index: 999;
+	background: lightcoral;
+}
+
+
+.shopping-cart {
+	cursor: pointer;
+}
+
+.items-counter {
+	color: #fff;
+	font-family: var(--bodytext-font);
+}
+
+
+/* .number-of-items {
+	padding: 0px 6px;
+	border-radius: 50%;
+	display: flex;
+	color: #fff;
+	background-color: var(--wireframe-purple);
+} */

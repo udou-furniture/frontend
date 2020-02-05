@@ -1,0 +1,50 @@
+#about {
+	background: #fff;
+	margin-top: 100px;
+}
+
+.about-grid {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	max-width: 1060px;
+	margin: 0 auto;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.about-text {
+	grid-column: 4/9;
+	margin-bottom: 120px;
+	background: var(--powerpoint-teal);
+	padding: 60px;
+	border-radius: 4px;
+	box-shadow: var(--shadow-2xl);
+	opacity: .7;
+}
+
+.about-text h1 {
+	margin-bottom: 20px;
+	color: #fff;
+	font-size: 48px;
+}
+
+.about-text p {
+	color: #fff;
+	font-size: 18px;
+}
+
+.about-img-container {
+	grid-column: 1/4;
+	background: url('../../assets/hero.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	height: 400px;
+	margin-top: -120px;
+	margin-right: -80px;
+	box-shadow: var(--shadow-2xl);
+	opacity: .9;
+	
+}
+

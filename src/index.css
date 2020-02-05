@@ -1,0 +1,118 @@
+:root {
+	--bg-grey-200: #EDF2F7;
+	--bg-grey-300: #e2e8f0;
+	--bg-grey-lighter: #f1f5f8;
+	--text-grey-900: #1a202c;
+	--text-grey-700: #4a5568;
+	--text-grey-darker: #606f7b;
+	--placeholder-text: #B1BBC1;
+	--text-grey-600: #718096;
+	--text-grey-500: #a0aec0;
+	--text-purple-500: #9f7aea;
+
+
+	--indigo-700: #4C51BF;
+	--indigo-600: #5A67D8;
+	--indigo-500: #667EEA;
+
+	--powerpoint-indigo: #b6c0e6;
+	--powerpoint-teal: #37b49c;
+	--powerpoint-purple: #968ed4;
+	--powerpoint-header: #404040;
+
+	--mels-peach: #FFA17A;
+	--tylko-peach: #EFD6D3;
+
+	--wireframe-purple: #6558F5;
+	--wireframe-green: #4BAE9F;
+	--wireframe-border-grey: #C5D0DA;
+	
+	--headline-font: 'Open Sans', sans-serif;
+	--bodytext-font: 'Source Sans Pro', sans-serif;
+	--navbar-header-font: 'Montserrat', sans-serif;
+
+	--shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+	--shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-med: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--alt-shadow-med: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+	--shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+
+	--hero-gradient: linear-gradient(180deg, rgba(182,192,230,1) 0%, rgba(255,255,255,1) 98%);
+	--stripe-linear-gradient: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+	--mels-peach-gradient: linear-gradient(180deg, rgba(255,161,122,1) 0%, rgba(255,255,255,1) 98%);
+}
+
+/* DEFAULT PLACEHOLDER TEXT COLOUR */
+::placeholder {
+	color: var(--placeholder-text);
+}
+
+/* RESET */
+* {
+	box-sizing: border-box;
+}
+
+body, p, a, ul, li, th {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+/* BASE STYLES */
+
+
+body {
+	overflow-x: hidden;
+}
+
+
+
+
+/* .button-primary:hover {
+	background: #fff;
+	color:
+} */
+
+
+
+/* FONT BASE STYLES  */
+
+h1, h2, h3, h4 {
+	font-family: var(--headline-font);
+	color: var(--text-grey-900);
+	font-weight: normal;
+	line-height: 1.4em;
+	margin: 0px;
+}
+
+p, a, li, th {
+	font-family: var(--bodytext-font);
+	color: var(--text-grey-900);
+	line-height: 1.4em;
+	/* font-size: 1em; */
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	gap: 10px;
+	max-width: 1060px;
+	margin: 0 auto;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.center-element {
+		max-width: 1060px;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+
+
