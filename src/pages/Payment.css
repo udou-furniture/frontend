@@ -1,5 +1,5 @@
 #payment-page {
-  background-color: #edf2f7;
+  background: var(--hero-gradient);
 }
 
 #checkout-page h3 {
@@ -111,6 +111,7 @@
 	border-radius: 4px;
 	box-sizing: border-box;
 	background: var(--wireframe-purple);
+	opacity: .8;
 	color: var(--bg-grey-lighter);
 	width: 100%;
 }
