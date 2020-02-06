@@ -46,6 +46,10 @@ We decided on the last day to redo the repository's on GitHub and redeploy our s
 
 [Testing](https://docs.google.com/spreadsheets/d/11FjiKOItbOdADng6T_R-3igUlFfuq5cdFLl0jFLSYrQ/edit?usp=sharing)
 
+### Cypress Testing Coverage Report
+
+![Coverage Report](docs/coverage-report.png)
+
 ### Dependencies
 
 #### Back-end
