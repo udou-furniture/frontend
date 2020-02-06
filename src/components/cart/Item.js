@@ -6,6 +6,10 @@ import {getLocalStorageToken} from '../../utils/localStorage'
 import OrderSummaryCard from '../orderSummary/OrderSummaryCard'
 import '../orderSummary/OrderSummaryCard.css'
 
+import { faHeart } from "@fortawesome/free-solid-svg-icons"; 
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 function mapStateToProps(state) {
     return {
       items: state.cart.items,
@@ -66,8 +70,14 @@ class Item extends React.Component {
                     price={price}
                     colour={colour}
                 />
-                <button onClick={this.handleRemoveCartClick}>Remove from Cart</button>
-                <button onClick={this.checkAuthedForSaveDesign}>Save For Later</button>
+                <div className="awkward-buttons">
+                    <a className="remove-from-cart-button" onClick={this.handleRemoveCartClick}>
+                    <FontAwesomeIcon color="#a0aec0" size="lg" icon={faTrashAlt} />Remove from cart
+                    </a>
+                    <a className="save-for-later-button" onClick={this.checkAuthedForSaveDesign}>
+                    <FontAwesomeIcon color="#a0aec0" size="lg" icon={faHeart} />Save for later
+                    </a>
+                </div>
             </div>
         )
     }

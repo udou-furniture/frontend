@@ -5,7 +5,6 @@ class OrderSummaryCard extends React.Component {
     render() {
         return (
         <div className="order-summary-container"> 
-            <h4>Order Summary</h4>
             <div className="summary-card">
                 <img className="furniture-icon" src={FurnitureIcon} />
                 <div className="summary-card-info">
@@ -19,7 +18,7 @@ class OrderSummaryCard extends React.Component {
                         <p>${this.props.price} AUD</p>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>    
         )
     }

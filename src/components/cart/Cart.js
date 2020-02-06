@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import { Link, withRouter } from 'react-router-dom';
 
 import Item from "./Item";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 class Cart extends React.Component {
@@ -19,7 +21,12 @@ class Cart extends React.Component {
 
     renderCheckoutButton() {
         if(this.props.items.length > 0) {
-            return <Link onClick={this.handleCheckoutClick}><button className="proceed-button" type='button'>Proceed to checkout</button></Link>
+            return <Link 
+                        onClick={this.handleCheckoutClick}>
+                        <button className="proceed-button" type='button'>
+                        <FontAwesomeIcon className="proceed-shopping-cart-icon" color="white" size="lg" icon={faShoppingCart} /> 
+                        Proceed to checkout</button>
+                    </Link>
         }
     }
 
