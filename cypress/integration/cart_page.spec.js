@@ -18,7 +18,7 @@ describe('Given I have added an item to my cart', () => {
 
     cy.contains('h2', 'Your Cart')
 
-    cy.get('.cart-item')
+    cy.get('.summary-card')
     .then(()=> {
       const userToken = window.localStorage.getItem('authorisation')
       expect(userToken).to.be.null
@@ -28,7 +28,7 @@ describe('Given I have added an item to my cart', () => {
   it('when I no longer want an item, then I should be able to remove it from my cart', () => {
     cy.get('.shopping-cart').click()
     // here
-    cy.get('.cart-item')
+    cy.get('.summary-card')
     cy.contains('button', 'Remove from Cart').click()
 
     cy.contains('p', 'Cart is empty. Keep shopping!')
@@ -37,7 +37,7 @@ describe('Given I have added an item to my cart', () => {
   it('when I view my cart, then I want to choose to save it for later', () => {
     cy.get('.shopping-cart').click()
 
-    cy.get('.cart-item')
+    cy.get('.summary-card')
     cy.contains('button', 'Save For Later').click()
   })
  
