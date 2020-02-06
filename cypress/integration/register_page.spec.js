@@ -21,7 +21,7 @@ describe('Given I have never signed up to this website before', () => {
 })
 
 describe('Given I have signed up to this page before, ', () => {
-  it.only('when I visit the register page, then I will not be able to sign up with the same email.', () => {
+  it('when I visit the register page, then I will not be able to sign up with the same email.', () => {
     cy.visit('/registration')
 
     cy.get('[name=email]').type('userexists@gmail.com')

@@ -24,7 +24,7 @@ describe('Given I know which type of furniture I would like to purchase, ', () =
 
     cy.contains('h4', 'Height').siblings().should('have.text', '60 cm')
     cy.contains('h4', 'Width').siblings().should('have.text', '120 cm')
-    cy.contains('h4', 'Depth').siblings().should('have.text', '40 cm')
+    cy.contains('h4', 'Depth').siblings().should('have.text', '16 cm')
 
     cy.get('.white-radio').click()
 

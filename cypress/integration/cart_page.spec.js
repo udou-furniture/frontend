@@ -30,7 +30,7 @@ describe('Given I have added an item to my cart', () => {
 
     cy.get('.summary-card')
 
-    cy.contains('button', 'Remove from Cart').click()
+    cy.contains('a', 'Remove from cart').click()
 
     cy.contains('p', 'Cart is empty. Keep shopping!')
   })
@@ -40,6 +40,6 @@ describe('Given I have added an item to my cart', () => {
 
     cy.get('.summary-card')
 
-    cy.contains('button', 'Save For Later').click()
+    cy.contains('a', 'Save for later').click()
   })
 })
