@@ -1,6 +1,5 @@
 #payment-complete-page {
-  background-color: #edf2f7;
-  height: 100vh;
+  background: var(--hero-gradient);
 }
 
 .complete-content {
