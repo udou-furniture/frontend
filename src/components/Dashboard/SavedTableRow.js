@@ -1,5 +1,9 @@
 import React from 'react'
 import axios from 'axios'
+import './Dashboard.css';
+import FurnitureIcon from '../../assets/furniture-icon.png';
+import { faTrashAlt} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {getLocalStorageToken} from '../../utils/localStorage'
 
@@ -19,24 +23,24 @@ class SavedTableRow extends React.Component {
     }
 
     render() {
+        console.log(this.props.order)
         return (
-            <tr>
-                <td>
-                    {this.props.order.configuration.height}
-                </td>
-                <td>
-                    {this.props.order.configuration.width}
-                </td>
-                <td>
-                    {this.props.order.configuration.depth}
-                </td>
-                <td>
-                    {this.props.order.configuration.colour}
-                </td>
-                <td>
-                    <button type='button' onClick={this.handleRemoveDesign}>Remove from Saved Design</button>
-                </td>
-            </tr>
+            <div className="purchased-card">
+                <img className="furniture-icon" src={FurnitureIcon} />
+                <div className="purchased-card-info">
+                    <div className="colour-selection">
+                        <p>{this.props.order.configuration.colour}</p>
+                    </div>
+                    <div className="dimensions">
+                        <p>{this.props.order.configuration.height * 120 }{' '} x {this.props.order.configuration.depth* 40}{' '} x {this.props.order.configuration.width * 120}</p>
+                    </div>
+                    <div className="purchased-card-price">
+                        <p>${this.props.order.configuration.price} AUD</p>
+                    </div>
+                </div>
+                <a className="button-remove-saved" type='button' onClick={this.handleRemoveDesign}>
+                <FontAwesomeIcon className="trash-icon" color="#4a5568" size="sm" icon={faTrashAlt} />Remove</a>
+            </div>
         );
       }
 }

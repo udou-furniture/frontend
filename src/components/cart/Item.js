@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 
 import {getLocalStorageToken} from '../../utils/localStorage'
 import OrderSummaryCard from '../orderSummary/OrderSummaryCard'
+import '../orderSummary/OrderSummaryCard.css'
 
 function mapStateToProps(state) {
     return {
@@ -53,7 +54,7 @@ class Item extends React.Component {
         const {height, width, depth, price, colour} = this.props.configuration
         
         return (
-            <div class="cart-item">
+            <div class="order-summary-grid">
                 <h4>{type}</h4>
                 <p>{name}</p>
                 {/* <OrderSummaryIndex /> */}

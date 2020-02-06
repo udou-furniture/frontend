@@ -22,7 +22,7 @@ class RegistrationForm extends React.Component {
 			<>
 				<div className="grid">	
 					<form className="registration-form" onSubmit={handleSubmit}>
-						<h1>Sign Up</h1>
+						<h1>Registration ✍️<span className="login-tagline"></span></h1> 
 						<div className="email">
 							<Field 
 								name="email" 
@@ -49,10 +49,8 @@ class RegistrationForm extends React.Component {
 							By signing up you agree to the <a href="#">terms of service</a> and <a href="#">privacy policy</a>
 						</div>
 					</form>
-					<div className="registration-form-img">
-					</div>
 					<div className="already-account">
-						Already have an account? <a>Log in</a>
+						<p>Already have an account? <span><a>Log in</a></span></p>
 					</div>
 				</div>
 			</>		

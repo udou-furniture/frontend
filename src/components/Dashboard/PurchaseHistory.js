@@ -30,18 +30,11 @@ class PurchaseHistory extends React.Component {
 
     render() {
         return(
-            <div className="previously-purchased center-element">
-                <h1>Previously Purchased</h1>
-                <table className="grid">
-                    <thead>
-                        <tr>
-                            <th>Item Details</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+            <div className="purchased-header">
+                <h4>Previously Purchased</h4>
+                <div className="dashboard-grid">
                     { this.mapTableData() }
-                    </tbody>
-                </table>
+                </div>
             </div>
         )
     }
