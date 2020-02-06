@@ -33,7 +33,7 @@ class RegistrationForm extends React.Component {
 								placeholder="Email"
 							/>
 						</div>
-						<div>{this.props.errorMessage && <span>email already exists</span>}</div>
+						<div>{this.props.errorMessage && <span>An account with this email already exists</span>}</div>
 						<div className="password">
 							<Field 
 								name="password" 

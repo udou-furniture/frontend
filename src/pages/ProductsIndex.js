@@ -54,7 +54,6 @@ class ProductsIndex extends React.Component {
 			type: 'UPDATE_NAME',
 			newName: example.name
 		});
-
 		this.props.dispatch({
 			type: 'SET_DEFAULTS',
 			exampleConfig

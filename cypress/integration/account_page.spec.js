@@ -13,7 +13,7 @@ describe('Given I am logged in with my account details,', () => {
     cy.location('pathname').should('equal', '/account')
   })
 })
-// here
+
 describe('Given I have purchased furniture on this website previously', () => {
   beforeEach(() => {
     cy.visit('/login')
@@ -26,17 +26,15 @@ describe('Given I have purchased furniture on this website previously', () => {
 
   it('when I am on the account dashboard page, then I can see my previously purchased items', () => {
     cy.contains('Previously Purchased')
-    cy.get('table').contains('td', '1')
-    cy.get('table').contains('td', 'Black')
+
+    cy.get('.purchased-card')
   })
 
   it('when I can see my previously purchased items, then I can click to leave a review on the product.', () => {
-    cy.contains('button', 'Leave a Review').click()
+    cy.contains('a', 'Leave a review').click()
 
     cy.get('[name=review]').type('This is a fantastic cabinet. Thank-you Kyle from UDOU Furniture for making this beautiful cabinet for my home. Great service!!')
     cy.contains('button', 'Submit').click()
-
-    cy.get('table').contains('td', 'This is a fantastic cabinet. Thank-you Kyle from UDOU Furniture for making this beautiful cabinet for my home. Great service!!')
   })
 })
 
