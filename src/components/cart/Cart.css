@@ -2,7 +2,6 @@
 	background: #fff;
 }
 
-
 .shopping-cart {
 	cursor: pointer;
 }
@@ -24,4 +23,25 @@
 	color: #fff;
 	width: 60%;
 	cursor: pointer;
+}
+
+.proceed-shopping-cart-icon {
+	margin-right: 8px;
+}
+
+.awkward-buttons {
+	margin-bottom: 48px;
+}
+
+.remove-from-cart-button {
+	cursor: pointer;
+	color: var(--text-grey-500);
+	padding: 8px;
+}
+
+.save-for-later-button {
+	cursor: pointer;
+	color: var(--text-grey-500);
+	margin-left: 24px;
+	padding: 8px;
 }

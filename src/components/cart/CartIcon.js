@@ -44,7 +44,7 @@ class CartIcon extends React.Component {
               {this.renderItemsCounter()}
             </span>
             <SlidingPane
-              className="some-class"
+              className='some-class'
               overlayClassName='some-custom-overlay-class'
               isOpen={ this.state.isPaneOpen }
               title='Your Cart'

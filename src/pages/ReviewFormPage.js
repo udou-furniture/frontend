@@ -22,10 +22,9 @@ class ReviewFormPage extends React.Component {
     render() {
         const {orderID} = this.props.match.params
         return(
-            <>
-                <h1>Review Form here</h1>
+            <div id="review-form-page">
                 <ReviewForm onSubmit={this.submit}/>
-            </>
+            </div>
         )
     }
 }

@@ -33,7 +33,7 @@
 }
 
 .button-hero {
-	border-radius: 5px;
+	border-radius: 4px;
 	color: var(--powerpoint-purple);
 	border: solid 2px var(--powerpoint-purple);
 	padding: 8px 12px;

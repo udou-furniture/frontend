@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CartIcon from '../cart/CartIcon';
 import LoungeRoom from '../../assets/lounge-room.jpg';
+import Bookshelves from '../../assets/bookshelves.jpg';
+import Wallunits from '../../assets/wall-unit-1.jpeg';
 import './Navbar.css';
 import { CSSTransition } from 'react-transition-group';
 
@@ -65,11 +67,6 @@ class Navbar extends React.Component {
 					>
 						<div className="list-body">
 							<div className="secondary grid">
-								{/* <ul className="list">
-									<li className="list-item">Bookshelves</li>
-									<li className="list-item"> Wall units</li>
-									<li className="list-item"> Sideboards</li>
-								</ul> */}
 								<div className="list-item one">
 									<Link
 										to={{ pathname: '/products/bookshelf' }}
