@@ -10,7 +10,7 @@ const productsList = [
 			colour: 'natural',
 			price: 99,
 			furnitureType:
-				'/static/media/cabinet-sample2-bookshelf-natural-ID1.jpg'
+				'https://udou-bucket.s3-ap-southeast-2.amazonaws.com/cabinet-sample2+-bookshelf-natural-ID1.jpg'
 		}
 	},
 	{
@@ -21,10 +21,10 @@ const productsList = [
 			height: 1.8,
 			width: 1,
 			depth: 0.4,
-			colour: 'natural',
+			colour: 'white',
 			price: 99,
 			furnitureType:
-				'/static/media/cabinets/cabinet-sample2-bookshelf-white-ID2.jpg'
+				'https://udou-bucket.s3-ap-southeast-2.amazonaws.com/cabinet-sample2-bookshelf-white-ID2.jpg'
 		}
 	},
 	{
@@ -35,10 +35,10 @@ const productsList = [
 			height: 2.3,
 			width: 1,
 			depth: 0.4,
-			colour: 'natural',
+			colour: 'black',
 			price: 99,
 			furnitureType:
-				'/static/media/cabinets/cabinet-sample2-bookshelf-black-ID3.jpg'
+				'https://udou-bucket.s3-ap-southeast-2.amazonaws.com/cabinet-sample2-bookshelf-black-ID3.jpg'
 		}
 	},
 	{
@@ -52,7 +52,7 @@ const productsList = [
 			colour: 'white',
 			price: 99,
 			furnitureType:
-				'/static/media/cabinets/cabinet-sample2-wall-storage-white-ID4.jpg'
+				'https://udou-bucket.s3-ap-southeast-2.amazonaws.com/cabinet-sample2-wall-storage-white-ID4.jpg'
 		}
 	},
 	{
@@ -66,7 +66,7 @@ const productsList = [
 			colour: 'black',
 			price: 99,
 			furnitureType:
-				'/static/media/cabinets/cabinet-sample2-wall-storage-black-ID5.jpg'
+				'https://udou-bucket.s3-ap-southeast-2.amazonaws.com/cabinet-sample2-wall-storage-black-ID5.jpg'
 		}
 	},
 	{
@@ -80,7 +80,7 @@ const productsList = [
 			colour: 'natural',
 			price: 99,
 			furnitureType:
-				'/static/media/cabinets/cabinet-sample2-wall-storage-natural-ID6.jpg'
+				'https://udou-bucket.s3-ap-southeast-2.amazonaws.com/cabinet-sample2-wall-storage-natural-ID6.jpg'
 		}
 	},
 	{
@@ -94,7 +94,7 @@ const productsList = [
 			colour: 'natural',
 			price: 99,
 			furnitureType:
-				'/static/media/cabinets/cabinet-sample2-sideboard-natural-ID7.jpg'
+				'https://udou-bucket.s3-ap-southeast-2.amazonaws.com/cabinet-sample2-+sideboard-natural-ID7.jpg'
 		}
 	},
 	{
@@ -105,10 +105,10 @@ const productsList = [
 			height: 1,
 			width: 2.1,
 			depth: 0.4,
-			colour: 'natural',
+			colour: 'black',
 			price: 99,
 			furnitureType:
-				'/static/media/cabinets/cabinet-sample2-sideboard-black-ID8.jpg'
+				'https://udou-bucket.s3-ap-southeast-2.amazonaws.com/cabinet-sample2-+sideboard-black-ID8.jpg'
 		}
 	},
 	{
@@ -119,10 +119,10 @@ const productsList = [
 			height: 1,
 			width: 2.5,
 			depth: 0.7,
-			colour: 'natural',
+			colour: 'white',
 			price: 99,
 			furnitureType:
-				'/static/media/cabinets/cabinet-sample2-sideboard-white-ID9.jpg'
+				'https://udou-bucket.s3-ap-southeast-2.amazonaws.com/cabinet-sample2-+sideboard-white-ID9.jpg'
 		}
 	}
 ];

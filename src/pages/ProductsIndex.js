@@ -19,6 +19,9 @@ function mapStateToProps(state) {
 		price: state.configurator.price
 	};
 }
+const style = {
+	transform: 'scale(2,2) translateX(-22.5%) translateY(-25%)'
+};
 
 class ProductsIndex extends React.Component {
 	handleClick(id, e) {
@@ -67,7 +70,10 @@ class ProductsIndex extends React.Component {
 			.map((product, key) => (
 				<div className="product-card" key={product.id}>
 					<div className="product-card-img-container">
-						<img src={cabinetBlack}></img>
+						<img
+							style={style}
+							src={product.configuration.furnitureType}
+						></img>
 					</div>
 					<div className="product-card-content">
 						<Link
