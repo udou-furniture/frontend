@@ -39,7 +39,6 @@ class CartIcon extends React.Component {
     render() {
         return (
           <div ref={ref => this.el = ref}>
-            {/* <img className="shopping-cart" onClick={() => this.setState({ isPaneOpen: true })}src={icon} alt="Cart" /> */}
             <FontAwesomeIcon className="shopping-cart" onClick={() => this.setState({ isPaneOpen: true })}color="white" size="2x" icon={faShoppingCart} /> 
             <span className="items-counter">
               {this.renderItemsCounter()}
@@ -52,7 +51,6 @@ class CartIcon extends React.Component {
               subtitle=""
               width="500px"
               onRequestClose={ () => {
-                  // triggered on "<" on left top click or on outside click
                   this.setState({ isPaneOpen: false });
               } }>
               <Cart authed={this.props.authed} history={this.props.history}/>

@@ -1,6 +1,5 @@
-.sliding-pane {
-	z-index: 999;
-	background: lightcoral;
+.slide-pane__header {
+	background: #fff;
 }
 
 
@@ -13,11 +12,16 @@
 	font-family: var(--bodytext-font);
 }
 
-
-/* .number-of-items {
-	padding: 0px 6px;
-	border-radius: 50%;
-	display: flex;
+.proceed-button {
+	font-size: 16px;
+	margin-bottom: 12px;
+	padding: 12px 16px;
+	border: solid 1px var(--bg-grey-lighter);
+	border-radius: 4px;
+	box-sizing: border-box;
+	background: var(--wireframe-purple);
+	opacity: .8;
 	color: #fff;
-	background-color: var(--wireframe-purple);
-} */
+	width: 60%;
+	cursor: pointer;
+}

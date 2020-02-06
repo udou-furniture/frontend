@@ -37,7 +37,7 @@ class OrderSummaryIndex extends React.Component {
   };
 
   render() {
-    return <ul>{this.createArray(this.props.items)}</ul>;
+    return <div>{this.createArray(this.props.items)}</div>;
   }
 }
 

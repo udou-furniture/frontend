@@ -19,9 +19,10 @@ class LoginForm extends React.Component {
 	render() {
         const { handleSubmit, pristine, submitting } = this.props
 		return (
-			<div className="grid">
+			<div className="login-grid">
 				<form className="login-form" onSubmit={handleSubmit}>
-					<h1>Log in</h1>
+					<h1>Welcome back 👋 <span className="login-tagline">Please sign in</span></h1> 
+				
 					<Field 
 						name="email" 
 						type="email"
@@ -40,7 +41,9 @@ class LoginForm extends React.Component {
 					
 					<button type="submit" disabled={pristine || submitting}>Submit</button>
 				</form>
-				<div className="login-img"></div>
+				<div className="login-img">
+					<img></img>
+				</div>
 			</div>	
 		);
 	}

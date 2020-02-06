@@ -2,8 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect} from 'react-redux';
 import './ProductsIndex.css';
-import greenDrawers from '../assets/green-drawers.jpg';
 import productsList from '../productsList';
+
+import { faSlidersH } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import cabinetBlack from '../assets/cabinet-black.jpg';
 
 function mapStateToProps(state) {
     return {
@@ -61,10 +64,12 @@ class ProductsIndex extends React.Component {
         .map((product, key) => (
 			<div className="product-card" key={product.id}>
 				<div className="product-card-img-container">
-					<img src={greenDrawers}></img>
+					<img src={cabinetBlack}></img>
 				</div>
                 <div className="product-card-content">
-                    <Link to={product.type + '/' + product.id} onClick={e => this.handleClick(product.id, e)} className="customise-button">Customise</Link>
+                    <Link to={product.type + '/' + product.id} className="customise-button" onCLick={e => this.handleClick(product.id, e)}><FontAwesomeIcon className="edit-icon" color="#fff" size="sm" icon={faSlidersH} />
+                    Customise
+                    </Link>
                 </div>
 			</div>
         ));

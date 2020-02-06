@@ -1,96 +1,94 @@
-/* MOBILE STYLES */
 
+#login-page {
+	background: var(--hero-gradient);
+} 
 
-/* LARGE TABLET & LAPTOP STYLES */
-@media screen and (min-width: 960px) {
-
-	#login-page {
-		/* background-color: var(--bg-grey-200); */
-		
-		/* display: grid;
-		max-width: 1060px;
-    margin: 100px auto;
-    width: 100%;
-		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: 2;
-		gap: 10px; */
-		/* place-items: center; */
-	
-	} 
-
-	.login-form {
-		grid-column: 1/4;
-		font-family: var(--bodytext-font);
-		background-color: #fff;
-		border: solid 1px var(--bg-grey-300);
-		border-radius: 5px;
-		box-shadow: var(--shadow-2xl);
-		padding: 80px;
-		margin-top: 100px;
-
-	}
-
-	.login-form h1 {
-		color: var(--text-grey-900);
-		margin-bottom: 40px;
-		text-align: center;
-		font-weight: bold;
-	}
-
-	.login-form label {
-		display: block;
-		color: var(--text-grey-600);
-	}
-
-	.login-form input {
-		/* background-color: var(--bg-grey-200); */
-		border: 1px solid var(--bg-grey-200);
-		box-shadow: inset 0 2px 4px 0px hsla(0, 0, 0, 0.08);
-		width: 100%;
-		border-radius: 3px;
-		margin-bottom: 12px;
-		font-size: 16px;
-		line-height: 24px;
-		color: var(--text-grey-600);
-		padding: 8px 12px;
-	}
-
-	.login-form button {
-		background: var(--wireframe-purple);
-		border-radius: 5px;
-		color: #fff;
-		padding: 9px 12px;
-		width: 100%;
-		font-size: 16px;
-		cursor: pointer;
-		margin-top: 4px;
-		margin-bottom: 20px;
-	}
-
-	.login-form button:hover {
-		background: var(--indigo-500);
-	}
-
-	.login-img {
-		grid-column: 4/9;
-		background: url('../../assets/placeholder-img-lg.png');
-		border: solid 1px var(--bg-grey-300);
-		border-radius: 5px;
-		box-shadow: var(--shadow-2xl);
-		padding: 30px;
-		margin-top: 100px;
-
-	}
-
-
-
-
-
-
-
-
-
-
-
-
+.login-grid {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	max-width: 1060px;
+	margin: 0 auto;
+	width: 100%;
+	box-sizing: border-box;
 }
+
+.login-form {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	grid-column: 3/6;
+	font-family: var(--bodytext-font);
+	border-radius: 4px;
+	padding-top: 24px;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-bottom: 32px;
+	background-color: #fff;
+	opacity: .7;
+	box-shadow: var(--shadow-2xl);
+}
+
+form h1 {
+	color: var(--text-grey-800);
+	margin-bottom: 40px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 28px;
+	
+}
+
+.login-tagline {
+	font-size: 28px;
+	color: var(--text-grey-700);
+}
+
+.login-form label {
+	display: block;
+	font-size: 12px;
+	margin-bottom: 8px;
+	color: var(--text-grey-darker);
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.025em;
+}
+
+.login-form input {
+	font-size: 16px;
+	margin-bottom: 12px;
+	padding: 12px 16px;
+	border: solid 1px var(--bg-grey-300);
+	border-radius: 4px;
+	color: var(--text-grey-800);
+	box-sizing: border-box;
+	width: 100%;
+	background:  var(--bg-grey-300);
+}
+
+.login-form button {
+	width: 100%;
+	font-size: 16px;
+	margin-bottom: 12px;
+	padding: 12px 16px;
+	border: solid 1px var(--bg-grey-lighter);
+	border-radius: 4px;
+	box-sizing: border-box;
+	background: var(--wireframe-purple);
+	opacity: .8;
+	color: #fff;
+	width: 100%;
+	cursor: pointer;
+}
+
+.login-form button:hover {
+	background: var(--indigo-500);
+}
+
+/* .login-img {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	grid-column: 4/9;
+	background: var(--tylko-peach);
+	border-radius: 4px;
+	box-shadow: var(--shadow-2xl);
+	opacity: 1;
+} */
+

@@ -1,4 +1,4 @@
-const orderReducer = (state = { type: "custom shelf", name: "01" }, action) => {
+const orderReducer = (state = { type: "My custom design 👌", name: "" } , action) => {
   let newState = {};
 
   switch (action.type) {

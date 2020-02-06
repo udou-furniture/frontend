@@ -24,7 +24,7 @@ class CardIndex extends React.Component {
 
             let nonEmptyReviews = allReviews.filter(order => order.review.length > 0)
             
-            const fiveReviews = nonEmptyReviews.slice(0, 5)
+            const fiveReviews = nonEmptyReviews.slice(0, 4)
 
             this.setReviews(fiveReviews);
         } catch (err) {
@@ -51,7 +51,6 @@ class CardIndex extends React.Component {
     render() {
         return (
           <div id="reviews">
-            <h1>Customer reviews</h1>
             <div className="review-card-grid">
               {this.createArray(this.props.reviews).map(reviewCard => {
                 return reviewCard;

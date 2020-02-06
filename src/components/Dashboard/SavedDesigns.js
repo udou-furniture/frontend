@@ -32,23 +32,11 @@ class SavedDesigns extends React.Component {
 
     render() {
         return(
-            <div className="saved-designs center-element">
-                <h1>My Saved Designs</h1>
-                <table className="grid">
-                    <thead>
-                        <tr>
-                            <th>Item Details</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {/* <td>Example</td>
-                        <td>Example</td>
-                        <td>Example</td>
-                        <td>Example</td>
-                        <td>Example</td> */}
+            <div className="saved-designs-header">
+                <h4>My Saved Designs</h4>
+                <div class="dashboard-grid">
                     { this.mapTableData() }
-                    </tbody>
-                </table>
+                </div>
             </div>
         )
     }

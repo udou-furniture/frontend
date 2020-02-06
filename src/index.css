@@ -40,11 +40,12 @@
 	--hero-gradient: linear-gradient(180deg, rgba(182,192,230,1) 0%, rgba(255,255,255,1) 98%);
 	--stripe-linear-gradient: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
 	--mels-peach-gradient: linear-gradient(180deg, rgba(255,161,122,1) 0%, rgba(255,255,255,1) 98%);
+	--tylko-peach-gradient: linear-gradient(360deg, rgba(239,214,211,1) 0%, rgba(255,255,255,1) 98%);
 }
 
 /* DEFAULT PLACEHOLDER TEXT COLOUR */
 ::placeholder {
-	color: var(--placeholder-text);
+	color: var(--text-grey-500);
 }
 
 /* RESET */
@@ -60,24 +61,12 @@ body, p, a, ul, li, th {
 }
 
 /* BASE STYLES */
-
-
 body {
 	overflow-x: hidden;
+	
 }
 
-
-
-
-/* .button-primary:hover {
-	background: #fff;
-	color:
-} */
-
-
-
 /* FONT BASE STYLES  */
-
 h1, h2, h3, h4 {
 	font-family: var(--headline-font);
 	color: var(--text-grey-900);
@@ -98,6 +87,7 @@ a:visited {
 }
 
 
+/* GRID BASE */
 .grid {
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
@@ -108,11 +98,9 @@ a:visited {
 	box-sizing: border-box;
 }
 
+/* EASY CENTER */
 .center-element {
 		max-width: 1060px;
 		margin: 0 auto;
 		width: 100%;
 	}
-
-
-

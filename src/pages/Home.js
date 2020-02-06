@@ -4,7 +4,6 @@ import CardIndex from '../components/reviews/CardIndex';
 import Hero from '../components/hero/Hero';
 import About from '../components/about/About';
 import Footer from '../components/footer/Footer';
-import ProductCardsIndex from '../components/productCardsIndex/productCardsIndex'
 
 class Home extends React.Component {
     render() {
@@ -13,7 +12,6 @@ class Home extends React.Component {
                 <Hero />
                 <About />
                 <CardIndex />
-                <ProductCardsIndex />
                 <Footer />
 			</>	
         );
