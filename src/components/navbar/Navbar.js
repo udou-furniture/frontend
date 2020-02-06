@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CartIcon from '../cart/CartIcon';
 import LoungeRoom from '../../assets/lounge-room.jpg';
+import Bookshelves from '../../assets/bookshelves.jpg';
+import Wallunits from '../../assets/wall-unit-1.jpeg';
 import './Navbar.css';
 import { CSSTransition } from "react-transition-group";
 
@@ -56,7 +58,7 @@ class Navbar extends React.Component {
 								<div className="list-item one">
 									<Link to={{pathname: "/products/bookshelf"}}>
 										<div className="dropdown-card-img-container">
-											<img className="dropdown-image" src={LoungeRoom} alt="placeholder"></img>
+											<img className="dropdown-image" src={Bookshelves} alt="placeholder"></img>
 										</div>
 										<div className="dropdown-card-content">
 											<h4>Bookshelves</h4>
@@ -66,7 +68,7 @@ class Navbar extends React.Component {
 								<div className="list-item two">
 									<Link to={{pathname: "/products/wallunit"}}>
 										<div className="dropdown-card-img-container">
-											<img className="dropdown-image" src={LoungeRoom} alt="placeholder"></img>
+											<img className="dropdown-image" src={Wallunits} alt="placeholder"></img>
 										</div>
 										<div className="dropdown-card-content">
 											<h4>Wall Units</h4>
