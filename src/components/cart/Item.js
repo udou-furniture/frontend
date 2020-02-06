@@ -59,8 +59,6 @@ class Item extends React.Component {
         
         return (
             <div class="order-summary-grid">
-                <h4>{type}</h4>
-                <p>{name}</p>
                 {/* <OrderSummaryIndex /> */}
                 <OrderSummaryCard
                     // key={id}

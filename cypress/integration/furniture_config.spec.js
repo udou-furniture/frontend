@@ -7,16 +7,14 @@ describe('Given I know which type of furniture I would like to purchase, ', () =
     cy.get('.list-item').contains('Bookshelves').click()
 
     // remove this line below once drop down is fixed
-    cy.contains('Shelves').click()
-
-    // cy.get('.product-card-img-container').find('img')
+    // cy.contains('Shelves').click()
   })
 
   it('I want to be able to choose to customise the sizes of the cabinet', () => {
     cy.contains('Customise').click()
 
     var nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, "value").set
-    // here
+  
     let input = cy.get('.height-sliding-block')
       .find('input[type=range]').as('range').then(input => {
         nativeInputValueSetter.call(input[0], '0.5') 

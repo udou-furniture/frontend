@@ -11,7 +11,7 @@ describe('Given I have an item in my cart', () => {
 
     // remove this line below once drop down is fixed
     // cy.contains('Shelves').click()
-    // hi
+
     cy.contains('Customise').click()
 
     cy.contains('button', 'Add To Cart').click()
@@ -19,7 +19,7 @@ describe('Given I have an item in my cart', () => {
   it('when I decide to purchase an item, then I am taken to the checkout to enter my details', () => {
     cy.get('.shopping-cart').click()
 
-    cy.contains('button', 'Proceed to Checkout').click()
+    cy.contains('button', 'Proceed to checkout').click()
 
     cy.location('pathname').should('equal', '/checkout')
 

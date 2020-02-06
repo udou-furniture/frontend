@@ -5,22 +5,18 @@ describe('Given I am a vistor to the UDOU website', () => {
   })
 
   it('when I am on the home page, I can see customer reviews of the furniture.', () => {
-    cy.contains('Customer reviews')
-
-    cy.wait(1000)
-    cy.get('.review-card').find('.reviewer-name')
-    // cy.get('.review-card').find('.review-text')
-    // cy.get('.review-card').find('.review-date')
+    cy.get('.review-card').find('.name-date')
   })
+
   it('When I am on the home page, then I want to be able to see the different types of furniture products they make and see what they look like.', () => {
     cy.contains('Shelves').click()
-    // here
+
     cy.get('.list-item').contains('Wall Units')
     cy.get('.list-item').contains('Sideboards')
     cy.get('.list-item').contains('Bookshelves').click()
 
     // remove this line below once drop down is fixed
-    cy.contains('Shelves').click()
+    // cy.contains('Shelves').click()
 
     cy.location('pathname').should('equal', '/products/bookshelf')
 
